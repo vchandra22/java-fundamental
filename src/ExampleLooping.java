@@ -81,8 +81,18 @@ public class ExampleLooping {
         System.out.println("input ukuran: ");
         n = scanner.nextInt();
 
-        for(i = 0; i < n; i++) {
-            System.out.print("*");
+        for (i = 0; i < n; i++) {
+            for (int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (i = n - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
